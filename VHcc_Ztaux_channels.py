@@ -298,6 +298,8 @@ if not args.doVV:
     bkg_procs = {
       'Wen' : ['WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Wmn' : ['WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Zmm' : ['ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Zee' : ['ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Znn' : ['ZH_hbb','ggZH_hbb','WH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother','VZcc'],
@@ -306,6 +308,8 @@ if not args.doVV:
     bkg_procs = {
       'Wen' : ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Wmn' : ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Zmm' : ['ZH_hcc','ggZH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Zee' : ['ZH_hcc','ggZH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother','VZcc'],
@@ -315,6 +319,8 @@ else:
     bkg_procs = {
     'Wen' : ['WH_hcc','ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
     'Wmn' : ['WH_hcc','ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
+    'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+    'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
     'Zmm' : ['ZH_hcc','ggZH_hcc','ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
     'Zee' : ['ZH_hcc','ggZH_hcc','ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
     'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc','ZH_hbb','ggZH_hbb','WH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother'],
@@ -325,6 +331,8 @@ if not args.doVV:
     sig_procs = {
       'Wen' : ['WH_hcc','ZH_hcc'],
       'Wmn' : ['WH_hcc','ZH_hcc'],
+      'Zetau' : ['WH_hcc','ZH_hcc'],
+      'Zmutau' : ['WH_hcc','ZH_hcc'],
       'Zmm' : ['ZH_hcc','ggZH_hcc'],
       'Zee' : ['ZH_hcc','ggZH_hcc'],
       'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc']
@@ -333,6 +341,8 @@ if not args.doVV:
     sig_procs = {
       'Wen' : ['WH_hbb','ZH_hbb'],
       'Wmn' : ['WH_hbb','ZH_hbb'],
+      'Zetau' : ['WH_hcc','ZH_hcc'],
+      'Zmutau' : ['WH_hcc','ZH_hcc'],
       'Zmm' : ['ZH_hbb','ggZH_hbb'],
       'Zee' : ['ZH_hbb','ggZH_hbb'],
       'Znn' : ['ZH_hbb','ggZH_hbb','WH_hbb']
@@ -355,8 +365,8 @@ if args.mjj:
       'Zmm' : [(1, 'SR_high_Zmm'), (2, 'SR_low_Zmm')],
       'Wen' : [(1, 'SR_Wenu')],
       'Wmn' : [(1, 'SR_Wmunu')],
-      #'Zetau' : [(1, 'SR_high_Zetau')],
-      #'Zmutau' : [(1, 'SR_high_Zmutau')],
+      'Zetau' : [(1, 'SR_high_Zetau')],
+      'Zmutau' : [(1, 'SR_high_Zmutau')],
       'Znn' : [(1, 'SR_Znn')]
     }
     
@@ -366,8 +376,8 @@ if args.mjj:
       'Zmm' : [(1, 'SR_high_Zmm'), (2, 'SR_low_Zmm')],
       'Wen' : [(1, 'SR_Wenu')],
       'Wmn' : [(1, 'SR_Wmunu')],
-      #'Zetau' : [(1, 'SR_high_Zetau')],
-      #'Zmutau' : [(1, 'SR_high_Zmutau')],
+      'Zetau' : [(1, 'SR_high_Zetau')],
+      'Zmutau' : [(1, 'SR_high_Zmutau')],
       'Znn' : [(1, 'SR_Znn')]
     }
     
