@@ -296,45 +296,45 @@ input_folders = {
 if not args.doVV:
   if not args.doHbb:
     bkg_procs = {
-      'Wen' : ['WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Wmn' : ['WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zmm' : ['ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zee' : ['ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Wen' : ['s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Wmn' : ['s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zetau' :  ['WH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmutau' :  ['WH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmm' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zee' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Znn' : ['ZH_hbb','ggZH_hbb','WH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother','VZcc'],
     }
   else:
     bkg_procs = {
-      'Wen' : ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Wmn' : ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zmm' : ['ZH_hcc','ggZH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-      'Zee' : ['ZH_hcc','ggZH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Wen' : ['ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Wmn' : ['ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zetau' :  ['WH_hcc''s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmutau' :  ['WH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zmm' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+      'Zee' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
       'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother','VZcc'],
     }
     print bkg_procs
 else:
     bkg_procs = {
-    'Wen' : ['WH_hcc','ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
-    'Wmn' : ['WH_hcc','ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
-    'Zetau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
+    'Wen' : ['ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
+    'Wmn' : ['ZH_hcc','WH_hbb','ZH_hbb','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother'],
+    'Zetau' :  ['WH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
     'Zmutau' :  ['WH_hcc','ZH_hcc','s_Top','TT','Wj_ll','Wj_bj','Wj_cj','Zj_ll','Zj_bj','Zj_cj','VVother','VZcc'],
-    'Zmm' : ['ZH_hcc','ggZH_hcc','ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
-    'Zee' : ['ZH_hcc','ggZH_hcc','ZH_hbb','ggZH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
+    'Zmm' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
+    'Zee' : ['s_Top','TT','Zj_ll','Zj_bj','Zj_cj','VVother'],
     'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc','ZH_hbb','ggZH_hbb','WH_hbb','s_Top','TT','Zj_ll','Zj_bj','Zj_cj','Wj_ll','Wj_bj','Wj_cj','VVother'],
   }
 
 if not args.doVV:
   if not args.doHbb:
     sig_procs = {
-      'Wen' : ['WH_hcc','ZH_hcc'],
-      'Wmn' : ['WH_hcc','ZH_hcc'],
-      'Zetau' : ['WH_hcc','ZH_hcc'],
-      'Zmutau' : ['WH_hcc','ZH_hcc'],
-      'Zmm' : ['ZH_hcc','ggZH_hcc'],
-      'Zee' : ['ZH_hcc','ggZH_hcc'],
+      'Wen' : ['WH_hcc'],
+      'Wmn' : ['WH_hcc'],
+      'Zetau' : ['ZH_hcc'],
+      'Zmutau' : ['ZH_hcc'],
+      'Zmm' : ['ZH_hcc'],
+      'Zee' : ['ZH_hcc'],
       'Znn' : ['ZH_hcc','ggZH_hcc','WH_hcc']
     }
   else:
@@ -383,6 +383,7 @@ if args.mjj:
     
 
 for chn in chns:
+  if chn == 'Znn': continue 
   cb.AddObservations( ['*'], ['vhcc'], ['13TeV'], [chn], cats[chn])
   cb.AddProcesses( ['*'], ['vhcc'], ['13TeV'], [chn], bkg_procs[chn], cats[chn], False)
   cb.AddProcesses( ['*'], ['vhcc'], ['13TeV'], [chn], sig_procs[chn], cats[chn], True)
