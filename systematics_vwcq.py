@@ -105,9 +105,6 @@ def AddSystematics2016(cb, splitJEC=False):
 ####################### SCALE FACTORS RATEPARAM
   
   # TT Zll
-  cb.cp().channel(['Zetau','Zmutau']).process(['TT']).AddSyst(cb,
-     'SF_TT_high_ZtauX_2017', 'rateParam', ch.SystMap('bin_id')
-     ([1],1.0))
 
   cb.cp().channel(['Zee','Zmm']).process(['TT']).AddSyst(cb,
      'SF_TT_low_Zll_2016', 'rateParam', ch.SystMap('bin_id')
@@ -290,6 +287,10 @@ def AddSystematics2017(cb, splitJEC=False):
 #=================================================================
   
    # TT Zll
+  cb.cp().channel(['Zetau','Zmutau']).process(['TT']).AddSyst(cb,
+     'SF_TT_high_ZtauX_2017', 'rateParam', ch.SystMap('bin_id')
+     ([1],1.0))
+     
   cb.cp().channel(['Zee','Zmm']).process(['TT']).AddSyst(cb,
      'SF_TT_high_Zll_2017', 'rateParam', ch.SystMap('bin_id')
      ([1,3,5,7,9],1.0))
@@ -299,6 +300,10 @@ def AddSystematics2017(cb, splitJEC=False):
      ([2,4,6,8,10],1.0))
  
   # Zj_ll Zll
+  cb.cp().channel(['Zetau','Zmutau']).process(['Zj_ll']).AddSyst(cb,
+     'SF_Zj_ll_high_ZtauX_2017', 'rateParam', ch.SystMap('bin_id')
+     ([1],1.0))
+     
   cb.cp().channel(['Zee','Zmm']).process(['Zj_ll']).AddSyst(cb,
      'SF_Zj_ll_high_Zll_2017', 'rateParam', ch.SystMap('bin_id')
      ([1,3,5,7,9],1.0))
@@ -308,6 +313,10 @@ def AddSystematics2017(cb, splitJEC=False):
      ([2,4,6,8,10],1.0))
  
   # Zj_bj Zll
+  cb.cp().channel(['Zetau','Zmutau']).process(['Zj_bj']).AddSyst(cb,
+     'SF_Zj_bj_high_ZtauX_2017', 'rateParam', ch.SystMap('bin_id')
+     ([1],1.0))
+     
   cb.cp().channel(['Zee','Zmm']).process(['Zj_bj']).AddSyst(cb,
      'SF_Zj_bj_high_Zll_2017', 'rateParam', ch.SystMap('bin_id')
      ([1,3,5,7,9],1.0))
@@ -317,6 +326,10 @@ def AddSystematics2017(cb, splitJEC=False):
      ([2,4,6,8,10],1.0))
  
   # Zj_cj Zll
+  cb.cp().channel(['Zetau','Zmutau']).process(['Zj_cj']).AddSyst(cb,
+     'SF_Zj_cj_high_ZtauX_2017', 'rateParam', ch.SystMap('bin_id')
+     ([1],1.0))
+     
   cb.cp().channel(['Zee','Zmm']).process(['Zj_cj']).AddSyst(cb,
      'SF_Zj_cj_high_Zll_2017', 'rateParam', ch.SystMap('bin_id')
      ([1,3,5,7,9],1.0))
